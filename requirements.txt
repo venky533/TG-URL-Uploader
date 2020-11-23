@@ -12,4 +12,5 @@ olefile
 ffmpeg-python
 ffprobe
 ffplay
-ffmpeg -i video.mp4 -filter_complex "amovie=/path/to/audio/file/audio.mp3:loop=0,asetpts=N/SR/TB,volume=2.0[audio];[0:a]volume=0.5[sa];[sa][audio]amix[fa]" -map 0:v -map [fa] -vcodec libx264 -preset ultrafast -shortest fout.mp4
+
+
